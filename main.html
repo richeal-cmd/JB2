@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story • Justyn & Bernadette</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Playfair Display', serif; background: linear-gradient(to bottom, #fce7f3, #f3e8ff); }
+    .love-font { font-family: 'Dancing Script', cursive; }
+    .envelope {
+      width: 320px;
+      height: 220px;
+      background: linear-gradient(#e11d48, #9f1239);
+      border-radius: 12px 12px 4px 4px;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+      cursor: pointer;
+      transition: transform 0.4s ease;
+    }
+    .envelope:hover { transform: scale(1.08); }
+    .envelope::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-top: 90px solid #f43f5e;
+      z-index: 2;
+    }
+    .flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 110px;
+      background: linear-gradient(#f43f5e, #e11d48);
+      clip-path: polygon(0 0, 50% 60%, 100% 0);
+      z-index: 3;
+    }
+
+    .polaroid {
+      background: white;
+      padding: 15px 15px 25px;
+      box-shadow: 0 15px 25px -5px rgba(0,0,0,0.35);
+      width: 100%;
+      max-width: 260px;
+      margin: 0 auto;
+    }
+    .polaroid img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+    .polaroid-wrapper {
+      transition: transform 0.3s ease;
+    }
+    .polaroid-wrapper:hover {
+      transform: scale(1.04) rotate(1deg);
+    }
+
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-md mx-auto px-6 py-12 text-center">
+    <h1 class="text-4xl love-font text-pink-600 mb-2">A Letter For You</h1>
+    <p class="text-pink-500">Justyn 💕</p>
+
+    <!-- Envelope -->
+    <div id="envelope" class="envelope mx-auto mt-12 relative">
+      <div class="flap"></div>
+      <div class="absolute inset-0 flex items-center justify-center text-white text-5xl">✉️</div>
+    </div>
+
+    <p class="text-pink-500 mt-6 text-sm">Tap the envelope to open</p>
+
+    <!-- The Letter -->
+    <div id="letter" class="hidden mt-12 bg-white rounded-3xl shadow-2xl p-10 text-left">
+      <h3 class="text-3xl love-font text-pink-600 mb-6">Heyyyy Addict,</h3>
+      <p class="leading-relaxed text-gray-700 mb-8">
+       Heyyy Addict, 
+Today isn’t just another day, it’s a day that marks a whole 365 days of loving youuu….
+can you imagine that? Honestly it’s actually crazy that a friendship that started so 
+simple has grown into something this deep. It feels unbelievable how far we’ve come 
+together my baby……we’ve had moments filled with so much memories, laughter, late night 
+calls, arguments, misunderstandings, games played together, conversations, 
+so much more and above all, much love for you each passing day.It’s such a beautiful
+ thing knowing there's someone out there for me, someone whose smile I already love, 
+ whose eyes light up whenever he sees me, someone who’s constantly trying to  be the best 
+ for me!……that feels amazing fr…
+</p>
+
+ <p class="leading-relaxed text-gray-700 mb-8">
+
+ In these past 12 months, you’ve literally been my world, my favourite person,
+  the ray of sunshine that brightens up my day, the whispers of comfort
+   when I’m completely down, you’ve been my source of joy on gloomy days, 
+   the voice of reason when I’m irrational, the calming voice I look forward
+    to hearing every night, you are a deep inhale when I can’t catch my
+     breath; and there's just so much joy in calling you mine
+ 
+
+    
+</p>
+
+<p class="leading-relaxed text-gray-700 mb-8">
+ I’ve asked myself severally; what do I love about you? Oh how I’d love
+  to say the most generic words “I love everything about you”. To the best 
+  of my knowledge, I love every facial expression you make when I send 
+  you videos of white whales, I love the way your eyes glisten when you
+   see me, I love that  you sometimes look at me like I’m all that really 
+   matters, I love your smile, and most of all I love that you are genuinely
+    someone everyone would love to know. You’re everything I never thought
+     I needed.God definitely knew what He was doing when He let our paths cross.
+</p>
+
+<p class="leading-relaxed text-gray-700 mb-8">
+My baby you’ve been more than just a face on the screen and a voice I hear regularly.
+ Constantly you show me what it means to be a patient and loving partner, you embody what
+  it takes to be tolerant and sincere, you’ve shown me a love that inspires growth and
+   brings out the best in both of us. I genuinely love you so much. Deeply too, for so
+    many reasons, but with no reason. You’re it for me, baby. Loving you feels beautiful
+     . Whatever tomorrow has in store for us, I do hope we get to do it together 
+</p>
+
+
+<p class="leading-relaxed text-gray-700 mb-8">
+So as we celebrate our first anniversary today, I hope that this is not just a celebration
+ of how much time we’ve had together but the beginning of our very beautiful story…………...Looking 
+ 
+forward to spending more years togetherrrr. Just so you know you’re stuck with me and I
+ couldn’t be happier about it! I LOVE YOU JUSTYN OVIGWO BOMA ASAK❤️.
+      </p>
+       <p class="mt-12 text-3xl love-font text-blue-600">01•30/08•∞
+       </p>
+     <p>
+1 year down, forever more to go!</p>
+    </div>
+      <p class="text-right text-2xl love-font text-pink-600">— Bernardette 💙</p>
+    </div>
+  </div>
+
+    <h2 class="text-4xl love-font text-center text-pink-600 mb-10">Our Beautiful Memories</h2>
+   <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="polaroid-wrapper">
+        <div class="polaroid rotate-[-2deg]">
+          <img src="JBphotos/photo1.jpeg" alt="">
+        </div>
+      </div>
+      <div class="polaroid-wrapper">
+        <div class="polaroid rotate-[3deg]">
+          <img src="JBphotos/photo2.jpeg" alt="">
+        </div>
+      </div>
+      <div class="polaroid-wrapper">
+        <div class="polaroid rotate-[-4deg]">
+          <img src="JBphotos/photo3.jpeg" alt="">
+        </div>
+      </div>
+      <div class="polaroid-wrapper">
+        <div class="polaroid rotate-[2deg]">
+          <img src="JBphotos/photo4.jpeg" alt="">
+        </div>
+      </div>
+      <div class="polaroid-wrapper">
+        <div class="polaroid rotate-[-1deg]">
+          <img src="JBphotos/photo5.jpeg" alt="">
+        </div>
+      </div>
+    <div class="polaroid-wrapper">
+      <div class="polaroid rotate-[3deg]">
+        <img src="JBphotos/photo6.jpeg" alt="">
+      </div>
+    </div>
+  
+     <div class="polaroid-wrapper">
+      <div class="polaroid rotate-[3deg]">
+        <img src="JBphotos/photo8.jpeg" alt="">
+      </div>
+    </div>
+     <!-- <div class="polaroid-wrapper">
+     <div class="polaroid rotate-[3deg]">
+        <img src="JBphotos/photo7.jpeg" alt="">
+      </div>
+    </div> -->
+   <div class="polaroid-wrapper" style="visibility: hidden;">
+     <div class="polaroid rotate-[3deg]">
+   <img src="JBphotos/photo7.jpeg" alt="">
+  </div>
+  </div>
+
+     <div class="polaroid-wrapper">
+      <div class="polaroid rotate-[3deg]">
+        <img src="JBphotos/photo9.jpeg" alt="">
+      </div>
+    </div>
+    
+    
+    <p class="col-span-full text-center text-3xl love-font mt-20 mb-20">Here's to forever with you, my love ❤️</p>
+  </div>
+  
+
+ <script>
+    document.getElementById('envelope').addEventListener('click', function() {
+      this.classList.add('hidden');
+      document.getElementById('letter').classList.remove('hidden');
+    });
+    </script>
+<audio id="bgmusic" loop>
+  <source src="jbsong.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById('bgmusic');
+  audio.volume = 0.5;
+
+  // Resume from where it left off
+  const savedTime = localStorage.getItem('musicTime');
+  if (savedTime) {
+    audio.currentTime =0;
+  }
+
+  // let musicStarted = false;
+
+  // function startMusic() {
+  //   if (musicStarted) return;
+  //   audio.play().then(() => {
+  //     musicStarted = true;
+  //   }).catch(() => {});
+  
+
+  // Try autoplay for desktop/browsers that allow it
+  audio.play().then(() => {
+    musicStarted = true;
+  }).catch(() => {});
+
+  // Fallback: start on first user interaction (needed for iOS)
+  ['click', 'touchstart'].forEach(evt => {
+    document.addEventListener(evt, startMusic, { once: true });
+  });
+
+  // Save position when leaving page
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem('musicTime', audio.currentTime);
+  });
+
+  // Also save every 5 seconds
+  setInterval(() => {
+    localStorage.setItem('musicTime', audio.currentTime);
+  }, 5000);
+</script>
+</body>
+</html>
