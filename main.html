@@ -223,22 +223,23 @@ forward to spending more years togetherrrr. Just so you know you’re stuck with
   // Resume from where it left off
   const savedTime = localStorage.getItem('musicTime');
   if (savedTime) {
-    audio.currentTime =0;
+    audio.currentTime = parseFloat(savedTime);
   }
 
-  // let musicStarted = false;
+  let musicStarted = false;
 
-  // function startMusic() {
-  //   if (musicStarted) return;
-  //   audio.play().then(() => {
-  //     musicStarted = true;
-  //   }).catch(() => {});
-  
+  function startMusic() {
+    if (musicStarted) return;
+
+    audio.play()
+      .then(() => {
+        musicStarted = true;
+      })
+      .catch(() => {});
+  }
 
   // Try autoplay for desktop/browsers that allow it
-  audio.play().then(() => {
-    musicStarted = true;
-  }).catch(() => {});
+  startMusic();
 
   // Fallback: start on first user interaction (needed for iOS)
   ['click', 'touchstart'].forEach(evt => {
